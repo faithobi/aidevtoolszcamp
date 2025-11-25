@@ -1,0 +1,19 @@
+{% extends 'todo/base.html' %}
+{% block title %}Todo List{% endblock %}
+{% block content %}
+  <h1>Todo List</h1>
+  <ul class="todo-list">
+    {% for t in todos %}
+      <li>
+        {% if t.completed %}<s>{{ t.title }}</s>{% else %}{{ t.title }}{% endif %}
+        {% if t.due_date %} - due {{ t.due_date }}{% endif %}
+        - <a href="{% url 'todo:toggle' t.pk %}">toggle</a>
+        - <a href="{% url 'todo:edit' t.pk %}">edit</a>
+        - <a href="{% url 'todo:delete' t.pk %}">delete</a>
+        <div>{{ t.description }}</div>
+      </li>
+    {% empty %}
+      <li>No todos yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
