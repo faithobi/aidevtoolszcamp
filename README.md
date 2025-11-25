@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # aidevtoolszcamp — Django TODO App
 
 This repository contains a small Django project with a TODO app used for learning and experimentation.
@@ -54,10 +55,12 @@ python manage.py test
 ```
 
 ## Notes
-- Templates are located at `todo/templates/todo/` and use `base.html` and `home.html`.
-- The `todo` app includes create/edit/delete/assign due dates and resolve (toggle) functionality.
-- Additions and changes to the project should generally be run inside the `venv` virtual environment.
 
----
 
 If you want additional features like validations, styling, or a full API, I can add them next.
+
+Note: This repo was created while following the 'Learning AIdevtools' exercises.
+=======
+# aidevtoolszcamp
+Learning AIdevtools
+>>>>>>> 28625e920feb05912ececf8a371ccd1bfa22345c
